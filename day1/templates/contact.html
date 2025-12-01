@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f3f7ff;
+        }
+
+        nav {
+            background: #4c57ff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            color: #fff;
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d0d4ff;
+        }
+
+        .container {
+            width: 400px;
+            background: #fff;
+            padding: 30px;
+            margin: 80px auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #4c57ff;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        .btn {
+            width: 100%;
+            background: #4c57ff;
+            border: none;
+            padding: 14px;
+            color: #fff;
+            font-size: 17px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #3d48d6;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(30px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">MySite</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+            <a href="/login/">Login</a>
+            <a href="/register/">Register</a>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <form action="#" method="POST">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message..." required></textarea>
+
+            <button class="btn">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>

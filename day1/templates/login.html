@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        /* Animated Gradient Background */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff512f, #dd2476);
+            background-size: 400% 400%;
+            animation: gradientMove 10s infinite ease-in-out;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Card Container */
+        .card {
+            width: 360px;
+            padding: 25px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        .input-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 4px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #ff512f;
+            outline: none;
+            box-shadow: 0 0 8px rgba(255, 81, 47, 0.4);
+        }
+
+        /* Button */
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #ff512f;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #dd2476;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Extra links */
+        .extra {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .extra a {
+            text-decoration: none;
+            color: #dd2476;
+        }
+
+        .extra a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Login</h2>
+
+        <form>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+            </div>
+
+            <button class="btn">Login</button>
+        </form>
+
+        <p class="extra">
+            Don't have an account? <a href="#">Register here</a>
+        </p>
+
+        <p class="extra">
+            <a href="#">Forgot Password?</a>
+        </p>
+    </div>
+
+</body>
+</html>
